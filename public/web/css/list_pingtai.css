@@ -1,0 +1,574 @@
+.bg {
+    background-color: #f2f5f8;
+    padding-top: 50px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header-address {
+    padding: 30px 0;
+}
+.header-address .slide-box {
+    position: relative;
+    width: 180px;
+    padding: 10px;
+    float: left;
+}
+.header-address .slide-box span {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    height: 20px;
+    line-height: 20px;
+    background: #3e9ae8;
+    color: #fff;
+    padding: 0 8px;
+    z-index: 999;
+}
+.content-box {
+    display: flex;
+    justify-content: space-between;
+}
+.left-box {
+    width: 800px;
+}
+.left-box .left-nav {
+    width: 100%;
+    background-color: #fff;
+    padding: 0 20px;
+    display: flex;
+    color: #999;
+}
+.left-box .left-nav .nav-box {
+    margin-right: 44px;
+}
+
+.left-box .left-nav .active {
+    border-bottom: 3px solid #359bea;
+    font-weight: bold;
+    color: #333;
+}
+.left-box .left-nav:hover {
+    cursor: pointer;
+}
+
+.left-box .left-nav .nav-box span {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 3px solid #fff;
+    font-size: 18px;
+
+}
+.left-website {
+    display: none;
+    width: 100%;
+    padding: 0 20px;
+    background-color: #fff;
+}
+.left-website-content {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.left-website .website-img {
+    position: relative;
+    /* border-bottom: 1px solid #eee; */
+}
+.left-website .website-img img {
+    width: 136px;
+    height: 74px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+.left-website .website-img .label {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    padding: 1px 5px;
+    color: #fff;
+    background-color: #2BB351;
+    border-radius: 5px 0 0 0;
+}
+.left-website .website-img .hei {
+    background-color: #e45950;
+}
+.left-box .hide {
+    display: block;
+}
+.website-introduction {
+    width: 480px;
+}
+.website-introduction .logo{
+    margin-left: 10px;
+    width: 27px;
+    height: 18px;
+}
+.website-introduction h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    height: 20px;
+    line-height: 20px;
+    color: #000;
+    font-weight: bold;
+}
+.website-introduction h3 span {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #4F524F;
+    padding: 0 8px;
+    border-radius: 10px;
+}
+.website-introduction h3 span.red {
+    background-color: #F83C02;
+}
+.website-introduction h3 span.ting {
+}
+.website-introduction h3 span.green {
+    background-color: #22A70C;
+}
+.website-introduction p {
+    font-size: 13px;
+    color: #999;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 5px;
+}
+.website-introduction .numStr {
+    height: 30px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+.website-introduction .numStr .str{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url('../image/str.png');
+}
+.website-introduction .numStr .str-active{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url('../image/str-active.png');
+}
+.website-introduction em {
+    color: #f16816;
+}
+.website-introduction img {
+    width: 16px;
+    height: 16px;
+}
+.rigs {
+    margin-top: 10px;
+}
+.rigs p{
+    color: #f16816;
+}
+.rigs .num {
+    font-size: 32px;
+    line-height: 32px;
+    font-family: Arial;
+    color: #f16816;
+    margin: 6px 0 6px;
+}
+.pos {
+    margin-top: 10px;
+}
+.pos span{
+    display: inline-block;
+    padding: 4px 7px;
+    color: #fff;
+    background-color: #009bf4;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.pos .num {
+    background-color: #f5f5f5;
+    color: #999;
+}
+.right-box {
+    width: 300px;
+    padding: 0 20px ;
+    background-color: #fff;
+    border: 1px solid #eee;
+    /*max-height: 640px;*/
+}
+.right-box .title {
+    border-bottom: 1px solid #e5e5e5;
+    color: #666;
+}
+.right-box .title span {
+    display: inline-block;
+    padding: 10px 0;
+    border-bottom: 2px solid #3e8df2;
+    font-size: 18px;
+}
+.right-box ul {
+    margin: 15px 0;
+}
+.right-box ul li {
+    padding: 5px 10px;
+    background-color: #f2f5f8;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.right-box ul li span:hover{
+    color: rgba(76, 161, 241, 0.719);
+}
+.right-box ul li img {
+    /*width: 26px;*/
+    height: 60px;
+    border-radius: 6px
+}
+.right-box ul li span {
+    display: inline-block;
+    /* margin-top: 5px; */
+    font-size: 15px;
+    margin-left: 18px;
+    color: #666;
+}
+.paging {
+    width: 840px;
+    text-align: center;
+    padding: 30px 0;
+}
+.paging a {
+    display: inline-block;
+    margin: 0 2px;
+    padding: 7px 12px;
+    background: #fff;
+    vertical-align: top;
+    border: 1px solid #ebedef
+}
+.paging .active {
+    color: #fff;
+    border: 1px solid #359bea;
+    background: #359bea;
+}
+.paging a:hover {
+    border: 1px solid #359bea;
+    background: #359bea;
+    color: #fff;
+}
+.paging .tip {
+    padding-top: 30px;
+    color: #333;
+    font-size: 13px;
+}
+.paging .tip span{
+    background-color: #E53333;
+    color: #FFFFFF
+}
+    .pagination p{
+        margin:0;
+        cursor:pointer
+    }
+    .pagination{
+        height:40px;
+        padding:20px 10px;
+    }
+    .pagination a{
+        display:block;
+        float:left;
+        margin-right:10px;
+        padding:2px 12px;
+        height:24px;
+        border:1px #cccccc solid;
+        background:#fff;
+        text-decoration:none;
+        color:#808080;
+        font-size:12px;
+        line-height:24px;
+    }
+    .pagination a:hover{
+        color:#077ee3;
+        background: white;
+        border:1px #077ee3 solid;
+    }
+    .pagination a.cur{
+        border:none;
+        background:#077ee3;
+        color:#fff;
+    }
+    .pagination p{
+        float:left;
+        padding:2px 12px;
+        font-size:12px;
+        height:24px;
+        line-height:24px;
+        color:#bbb;
+        border:1px #ccc solid;
+        background:#fcfcfc;
+        margin-right:8px;
+    }
+    .pagination p.pageRemark{
+        border-style:none;
+        background:none;
+        margin-right:0px;
+        padding:4px 0px;
+        color:#666;
+    }
+    .pagination p.pageRemark b{
+        color:red;
+    }
+    .pagination p.pageEllipsis{
+        border-style:none;
+        background:none;
+        padding:4px 0px;
+        color:#808080;
+    }
+    .website-introduction{
+        width: 600px;
+    }
+    .dates li {font-size: 14px;margin:20px 0}
+    .dates li span{float:right}
+    .pagination li{
+        display: inline-block;
+    }
+    .pagination .active span{
+        display:block;
+        float:left;
+        margin-right:10px;
+        padding:2px 12px;
+        height:24px;
+        border:1px #cccccc solid;
+        background:#1882f2;
+        text-decoration:none;
+        color:white;
+        font-size:12px;
+        line-height:24px;
+    }
+    .disabled span{
+        display:block;
+        float:left;
+        margin-right:10px;
+        padding:2px 12px;
+        height:24px;
+        border:1px #cccccc solid;
+        background:#fff;
+        text-decoration:none;
+        color:#808080;
+        font-size:12px;
+        line-height:24px;
+    }
+    .website-img{
+        margin-top:10px;
+    }
+    .left-website .website-img{
+        border-bottom: 0px;
+    }
+    .website-introduction .numStr .str-active{
+        background: url(/web/image/str-active.png);
+    }
+    .website-introduction .numStr .str{
+        background: url(/web/image/str.png);
+    }
+    .left-box .left-nav .nav-box span{
+        height: 50px;
+        line-height: 50px;
+    }
+    .left-website{
+        margin-top: 0px;
+    }
+    .showspan{
+        color: white;
+        padding: 0 8px;
+        border-radius: 10px;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+        .pagination p{
+        margin:0;
+        cursor:pointer
+    }
+    .pagination{
+        height:40px;
+        padding:20px 10px;
+        width: 820px;
+        background-color: white;
+    }
+    .pagination a{
+        display:block;
+        float:left;
+        margin-right:10px;
+        padding:2px 12px;
+        height:24px;
+        border:1px #cccccc solid;
+        background:#fff;
+        text-decoration:none;
+        color:#808080;
+        font-size:12px;
+        line-height:24px;
+    }
+    .pagination a:hover{
+        color:white;
+        background: #1882f2;
+        border:1px #077ee3 solid;
+    }
+    .pagination a.cur{
+        border:none;
+        background:#077ee3;
+        color:#fff;
+    }
+    .pagination p{
+        float:left;
+        padding:2px 12px;
+        font-size:12px;
+        height:24px;
+        line-height:24px;
+        color:#bbb;
+        border:1px #ccc solid;
+        background:#fcfcfc;
+        margin-right:8px;
+    }
+    .pagination p.pageRemark{
+        border-style:none;
+        background:none;
+        margin-right:0px;
+        padding:4px 0px;
+        color:#666;
+    }
+    .pagination p.pageRemark b{
+        color:red;
+    }
+    .pagination p.pageEllipsis{
+        border-style:none;
+        background:none;
+        padding:4px 0px;
+        color:#808080;
+    }
+    .dates li {font-size: 14px;margin:20px 0}
+    .dates li span{float:right}
+    .pagination li{
+        display: inline-block;
+    }
+    .pagination .active span{
+        display:block;
+        float:left;
+        margin-right:10px;
+        padding:2px 12px;
+        height:24px;
+        border:1px #cccccc solid;
+        background:#1882f2;
+        text-decoration:none;
+        color:white;
+        font-size:12px;
+        line-height:24px;
+    }
+    .disabled span{
+        display:block;
+        float:left;
+        margin-right:10px;
+        padding:2px 12px;
+        height:24px;
+        border:1px #cccccc solid;
+        background:#fff;
+        text-decoration:none;
+        color:#808080;
+        font-size:12px;
+        line-height:24px;
+    }
+    .warm{
+        width:840px;
+        display:inline-block;
+        float: left;
+        background-color: white;
+        line-height:20px;
+    }
+    .warm .content{
+        padding:15px 15px 15px 15px;
+    }
+    .warm .content .warmingtitle{
+        margin-right:5px;
+        background-color: red;
+        color: white;
+        padding:2px 3px 2px 7px ;
+    }
+    .website-introduction a{
+        color:black;
+    }
+    .right-box a{
+        color:black;
+    }
+    .company_namer{
+        line-height: 60px;
+    }
+
+    .all-website {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+    .all-website .zimu-top span{
+        display: inline-block;
+        padding: 3px 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .all-website .zimu-top span.active {
+        background-color: #0085FF;
+        color: #fff;
+    }
+    .all-website .zimu-top span:hover {
+        background-color: #0085FF;
+        color: #fff;
+    }
+    .zimu-img {
+        padding-top: 30px;
+    }
+    .zimu-img img {
+        margin-right: 10px;
+        width: 116px;
+        border: 1px solid #d0d0d0;
+        margin-bottom: 25px;
+        /* cursor: pointer; */
+    }
+    .state-box{
+        font-size: 16px;
+    }
+    .state-box span {
+        display: inline-block;
+        padding: 3px 5px;
+        border-radius: 5px;
+        border: 1px solid #999;
+        color: #999;
+        margin-right: 10px;
+
+
+    }
+    .state-box span:hover {
+        cursor: pointer;
+        border: 1px solid #0085FF;
+        color: #0085FF;
+    }
+    .state-box span.active {
+        border: 1px solid #0085FF;
+        color: #0085FF;
+    }
+    .state-zimu {
+        margin: 20px 0;
+        background-color: #F1F4FB;
+    }
+    .state-zimu span {
+        display: inline-block;
+        color: #0085FF;
+        font-size: 34px;
+        padding: 0 12px;
+        margin-left: 30px;
+        background-color: #fff;
+    }
+    .state-img {
+        padding-top: 10px;
+    }
+    .state-img img{
+        margin-right: 10px;
+        width: 116px;
+        border: 1px solid #d0d0d0;
+        margin-bottom: 25px;
+    }

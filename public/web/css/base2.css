@@ -1,0 +1,141 @@
+/*body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button,img{padding: 0; margin: 0;}*/
+html{ _background:url(about:blank);}
+/* é…Œæƒ…ä¿®æ”¹ */
+ body{background:#fff;font-family:"å¾®è½¯é›…é»‘","å®‹ä½“";margin:0px;} 
+body,th,td,input,select,textarea,button{font-size:14px;line-height:1 ;} 
+/* é‡ç½®é¡µé¢æ–‡å­—å±žæ€§ */
+
+/* çŸ­å¼•ç”¨çš„å†…å®¹å¯å–å€¼ï¼š''æˆ–"" */
+blockquote:before, blockquote:after,q:before, q:after{content:'';content:none} /* é‡ç½®åµŒå¥—å¼•ç”¨*/
+
+/* ç¼©å†™ï¼Œå›¾ç‰‡ç­‰æ— è¾¹æ¡† */
+fieldset,img,abbr,acronym{border: 0 none;} /* é‡ç½®fieldsetï¼ˆè¡¨å•åˆ†ç»„ï¼‰ã€å›¾ç‰‡çš„è¾¹æ¡†ä¸º0*/
+img{vertical-align:top;} /* å›¾ç‰‡åœ¨å½“å‰è¡Œå†…çš„åž‚ç›´ä½ç½® */
+abbr,acronym{font-variant: normal;}
+legend{color:#000;}
+blockquote, q{quotes: none} /* é‡ç½®åµŒå¥—å¼•ç”¨çš„å¼•å·ç±»åž‹ */
+
+/* æ¸…é™¤ç‰¹æ®Šæ ‡è®°çš„å­—ä½“å’Œå­—å· */
+/*address,caption,cite,code,dfn,em,strong,th,var{font-weight: normal; font-style: normal;} /* é‡ç½®æ ·å¼æ ‡ç­¾çš„æ ·å¼ */*/
+
+/* ä¸Šä¸‹æ ‡ */
+/* ç»Ÿä¸€ä¸Šæ ‡å’Œä¸‹æ ‡ */
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+sup{top:-0.5em; }
+sub{bottom:-0.25em;}
+
+/* è®¾ç½®è¡¨æ ¼çš„è¾¹æ¡†è¢«åˆå¹¶ä¸ºä¸€ä¸ªå•ä¸€çš„è¾¹æ¡†, æŒ‡å®šåˆ†éš”è¾¹æ¡†æ¨¡åž‹ä¸­å•å…ƒæ ¼è¾¹ç•Œä¹‹é—´çš„è·ç¦»ä¸º0*/
+
+/* è¡¨æ ¼æ ‡é¢˜åŠå†…å®¹å±…å·¦æ˜¾ç¤º */
+caption{display:none;} /* é‡ç½®è¡¨æ ¼æ ‡é¢˜ä¸ºéšè— */
+caption,th{text-align: left;}
+
+/* æ¸…é™¤åˆ—è¡¨æ ·å¼ */
+dl,ul,ol,menu,li{list-style:none} /* é‡ç½®ç±»è¡¨å‰å¯¼ç¬¦å·ä¸ºonne,menuåœ¨HTML5ä¸­æœ‰æ•ˆ */
+
+input,button,textarea,select,optgroup,option{font-family:inherit; font-size:inherit; font-style:inherit; font-weight:inherit;}/* è¾“å…¥æŽ§ä»¶å­—ä½“ */
+input,select,textarea,button{vertical-align:middle;outline:none;} /* é‡ç½®è¡¨å•æŽ§ä»¶åž‚ç›´å±…ä¸­*/
+textarea{resize:none}
+
+input[type="submit"]{cursor: pointer;}/* é¼ æ ‡æ ·å¼ */
+button{border:0 none;background-color:transparent;cursor:pointer} /* é‡ç½®è¡¨å•buttonæŒ‰é’®æ•ˆæžœ */
+input::-moz-focus-inner{border: 0; padding: 0;}
+
+/* æ ‡é¢˜å…ƒç´ æ ·å¼æ¸…é™¤, è®©æ ‡é¢˜éƒ½è‡ªå®šä¹‰, é€‚åº”å¤šä¸ªç³»ç»Ÿåº”ç”¨ */
+h1,h2,h3,h4,h5,h6{font-size: 100%;font-weight: bold;}
+
+/* é“¾æŽ¥æ ·å¼ï¼Œé¢œè‰²å¯é…Œæƒ…ä¿®æ”¹ */
+a:link {color :#000}/* æœªè®¿é—®çš„é“¾æŽ¥ */
+a:visited { color :#000}/* å·²è®¿é—®çš„é“¾æŽ¥ */
+a:hover { cursor: pointer;}/* é¼ æ ‡ç§»åŠ¨åˆ°é“¾æŽ¥ä¸Š */
+a:active {}/* é€‰å®šçš„é“¾æŽ¥ */
+del,ins,a{text-decoration:none;}
+a:hover,a:active,a:focus{ text-decoration:none;} /* å–æ¶ˆaæ ‡ç­¾ç‚¹å‡»åŽçš„è™šçº¿æ¡† */
+/*
+::selection{color: #fff;}
+::-moz-selection{color: #fff;background-color: #4C6E78;}
+*/
+a{outline: none;transition: color 0.2s ease 0s;}/*CSS3é“¾æŽ¥ç§’æ•°ç¼“å†²æ•ˆæžœ2ç§’*/
+/* å±‚æ¿å—ç¼“å†²æ•ˆæžœCSS3       transition: all 0.3s ease 0s;   */
+.clearfix {zoom:1}
+.clearfix:after {content: '\20'; display: block; clear: both;}
+.f_yh{font-family:"Arial, Helvetica, sans-serif";}/*f_yhä¸ºè‹±æ–‡å­—ä½“æ ·å¼*/
+.cursor{ cursor:pointer;}
+.pr{position:relative}/*ç›¸å¯¹å®šä½*/
+.pa{position:absolute}/*ç»å¯¹å®šä½*/
+.fl{ float:left;}/*å·¦æµ®åŠ¨*/
+.fr{ float:right;}/*å³æµ®åŠ¨*/
+.fl,.fr{display:inline;}/*æµ®åŠ¨åŽï¼Œæ­¤å…ƒç´ ä¼šè¢«æ˜¾ç¤ºä¸ºå†…è”å…ƒç´ ï¼Œå…ƒç´ å‰åŽæ²¡æœ‰æ¢è¡Œç¬¦*/
+
+/*æ–‡å­—é¢œè‰²cï¼ŒèƒŒæ™¯é¢œè‰²bc*/
+.c1{color:#5d5d5d}
+.bc1{background:#f3f3f3}
+
+/*ä¸Šè¾¹è·*/
+.mt1{margin-top: 10px;}
+.mt2{margin-top: 20px;}
+.mt3{margin-top: 30px;}
+.mt4{margin-top: 40px;}
+.mt5{margin-top: 50px;}
+input {
+    outline: none;
+    border: 0;
+}
+.searchul{
+    width: 100%;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    background: #fff;
+    z-index: 1000 !important;
+    max-height: 196px;
+    overflow-y: scroll;
+    box-shadow: 0 0 5px #ccc;
+    height: 0;
+    border-radius: 0 0 5px 5px;
+}
+.searchul li{
+    color: #333;
+    padding-left: 15px;
+    line-height: 28px;
+    cursor: pointer;
+
+}
+.searchul li:hover{
+    background: #f2f2f2;
+}
+.fixed-i .fixed-header .input .shu
+{
+    margin-top: 5px;
+    width:309px;
+    height: 35px;
+}
+.fixed-i .fixed-header .input a{
+    height: 37px;
+}
+.fixed-i .fixed-header .input{
+    width: 392px;
+}
+.fixed-i .fixed-header .fixed-right .r2 a span{
+    top:-17px;
+}
+.fixed-i .fixed-header .input a{
+    line-height: 37px;
+}
+.wrap p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px 0;
+    font-size: 12px;
+
+}
+.one a {
+    color: #999;
+}
+.two a{
+    color: #999;
+}
+
+.showcomment{
+    padding-inline-start:0px;
+}

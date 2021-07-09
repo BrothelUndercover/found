@@ -1,0 +1,174 @@
+.login-bg {
+  background-color: #F2F5F8;
+  height: 100vh;
+  position: relative;
+}
+.login-bg a {
+  color: #1478F0;
+}
+.login-bg .login-footer {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  color: #999;
+  margin-left: -210px;
+  text-align: center;
+}
+.login-bg .login-footer p {
+  margin-top: 10px;
+}
+.login-bg .login-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -220px;
+  margin-top: -195px;
+  padding: 50px;
+  height: 290px;
+  width: 340px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #999;
+}
+.login-bg .login-box .login-nav {
+  display: flex;
+  padding: 0 30px;
+  justify-content: space-between;
+}
+.login-bg .login-box .login-nav h3 {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 3px;
+  color: #999;
+}
+.login-bg .login-box .login-nav h3.active {
+  color: #333;
+  border-bottom: 1px solid #666;
+}
+.login-bg .login-box .login-nav h3:hover {
+  cursor: pointer;
+}
+.login-bg .login-box .password-box {
+  display: none;
+  margin-top: 30px;
+}
+.login-bg .login-box .password-box .xuanze {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 30px;
+}
+.login-bg .login-box .password-box .password-phone {
+  color: #333;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+.login-bg .login-box .password-box .password-phone b {
+  font-weight: 400;
+  color: #999;
+}
+.login-bg .login-box .password-box .password-phone input {
+  width: 230px;
+}
+.login-bg .login-box .password-box .password-phone input::-webkit-input-placeholder {
+  color: #999;
+}
+.login-bg .login-box .password-box p.password-xian {
+  width: 100%;
+  height: 1px;
+  background: #d4d3d3;
+}
+.login-bg .login-box .password-box .password-text {
+  margin-top: 20px;
+  padding: 10px 5px;
+}
+.login-bg .login-box .password-box .password-text input {
+  width: 230px;
+}
+.login-bg .login-box .password-box .password-text input::-webkit-input-placeholder {
+  color: #999;
+}
+.login-bg .login-box .password-box .password-text span {
+  color: #d4d3d3;
+}
+.login-bg .login-box .password-box .forget {
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.login-bg .login-box .password-box .forget a {
+  color: #1478F0;
+  font-size: 12px;
+}
+.login-bg .login-box .password-box .login-btn {
+  margin-top: 10px;
+}
+.login-bg .login-box .password-box .login-btn .button {
+  background-color: #1478F0;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+}
+.login-bg .login-box .password-box .duanxin-btn {
+  margin-top: 42px;
+}
+.login-bg .login-box .password-box .duanxin-btn .button {
+  background-color: #1478F0;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+}
+.login-bg .login-box .password-box .register-tips {
+  font-size: 12px;
+  text-align: center;
+  padding: 15px 0 10px;
+  color: #DB280B;
+}
+.login-bg .login-box .password-box .register-zhuce {
+  font-size: 12px;
+  text-align: center;
+}
+.login-bg .login-box .password-box .no-register {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+}
+.login-bg .login-box .password-box .no-register2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+}
+.login-bg .login-box .password-box .password-code {
+  color: #1478F0;
+  margin-left: 10px;
+}
+.login-bg .login-box .hide {
+  display: block;
+}
+.logo{
+    margin-left:-8px;
+}
+.fixed-right{
+    margin-right: 9px;
+}
+.xuanze{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    color:grey;
+}
