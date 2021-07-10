@@ -16,3 +16,5 @@ Route::get('about','HomeController@about')->name('pages.about');
 Route::get('statement','HomeController@statement')->name('pages.statement');
 Route::get('agreement','HomeController@agreement')->name('pages.agreement');
 Route::get('contactus','HomeController@contactus')->name('pages.contactus');
+Route::get('most-new','CompanyController@newest')->name('company.newest');
+Route::get('monitor','CompanyController@monitor')->name('company.monitor');

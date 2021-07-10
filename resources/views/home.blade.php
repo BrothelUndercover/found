@@ -159,7 +159,7 @@
                                 <p>综合分</p>
                                 <p>名次变动</p>
                             </div>
-                            @foreach($companies as $i => $company)
+                            @foreach($companies->where('category',1) as $i => $company)
                             <div class="security-ranking">
                                 <p class="one">{{ $i+1 }}</p>
                                 <p class="two"><a href="{{ route('company.show',['company'=>$company])}}"><img src="/storage/{{ $company->platform_logo}}" alt="{{ $company->platform_name }}"></a></p>
@@ -206,7 +206,7 @@
                                 <span>推荐阅读</span>
                             </div>
                         </div>
-                        @foreach($news->random(5) as $new)
+                        @foreach($news->random(2) as $new)
                         <div class="new-img">
                             <a href="{{ route('actile.show',['new'=>$new])}}" target="#"><img src="/storage/{{$new->cover}}"></a>
                         </div>

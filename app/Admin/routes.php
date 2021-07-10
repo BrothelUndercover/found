@@ -16,4 +16,5 @@ Route::group([
     $router->resource('article', 'GroupController');
     $router->resource('news', 'ArticleController');
     $router->resource('company', 'CompanyController');
+    $router->resource('monitor','MonitorController');
 });

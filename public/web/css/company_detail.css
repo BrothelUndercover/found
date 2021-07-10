@@ -837,22 +837,22 @@ td{
   font-weight: 400;
 }
 .detail-wrap .detail-head .head-left .right-follow li:hover .guan {
-  background: url('../image/guan-icon1.png') no-repeat;
+  background: url('/web/image/guan-icon1.png') no-repeat;
 }
 .detail-wrap .detail-head .head-left .right-follow li:hover .jiu {
-  background: url('../image/jiu-icon1.png') no-repeat;
+  background: url('/web/image/jiu-icon1.png') no-repeat;
 }
 .detail-wrap .detail-head .head-left .right-follow li:hover .tou {
-  background: url('../image/tou-icon1.png') no-repeat;
+  background: url('/web/image/tou-icon1.png') no-repeat;
 }
 .detail-wrap .detail-head .head-left .right-follow .guan {
-  background: url('../image/guan-icon.png') no-repeat;
+  background: url('/web/image/guan-icon.png') no-repeat;
 }
 .detail-wrap .detail-head .head-left .right-follow .jiu {
-  background: url('../image/jiu-icon.png') no-repeat;
+  background: url('/web/image/jiu-icon.png') no-repeat;
 }
 .detail-wrap .detail-head .head-left .right-follow .tou {
-  background: url('../image/tou-icon.png') no-repeat;
+  background: url('/web/image/tou-icon.png') no-repeat;
 }
 .detail-wrap .detail-head .head-right table.com td .tong {
     cursor: pointer;
@@ -930,7 +930,7 @@ td{
   height: 180px;
 }
 
-/*增加的样式*/
+/*å¢žåŠ çš„æ ·å¼*/
 .ppc_plnum{
     color: red;
     font-size: 14px;

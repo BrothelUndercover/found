@@ -46,7 +46,7 @@
     <div class="copyright">
         <div class="wrap">
            <div class="copyright-left">
-               <img src="/web/image/head-logo.png" >
+               <img src="/web/image/logo.png" >
 
                <p class="one">
                    <a href="{{ route('pages.about') }}" ><span>关于我们</span></a>
