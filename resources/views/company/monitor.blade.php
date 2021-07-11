@@ -5,12 +5,12 @@
     <div class="wrap-box">
         <nav class="new-nav">
             <ul>
-          {{--       <a href="/commentlist">
+                <a href="{{ route('company.comment')}}">
                     <li>热评</li>
                 </a>
                 <a href="/complaintlist">
                     <li>曝光</li>
-                </a> --}}
+                </a>
                 <a href="{{ route('company.monitor')}}">
                     <li class="active">监控</li>
                 </a>

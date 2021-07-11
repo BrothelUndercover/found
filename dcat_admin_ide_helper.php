@@ -43,6 +43,8 @@ namespace Dcat\Admin {
      * @property Grid\Column|Collection publisher
      * @property Grid\Column|Collection content
      * @property Grid\Column|Collection is_check
+     * @property Grid\Column|Collection company_id
+     * @property Grid\Column|Collection status
      * @property Grid\Column|Collection category
      * @property Grid\Column|Collection platform_logo
      * @property Grid\Column|Collection platform_name
@@ -88,9 +90,7 @@ namespace Dcat\Admin {
      * @property Grid\Column|Collection exception
      * @property Grid\Column|Collection failed_at
      * @property Grid\Column|Collection Introduction
-     * @property Grid\Column|Collection status
      * @property Grid\Column|Collection check_time
-     * @property Grid\Column|Collection company_id
      * @property Grid\Column|Collection is_business
      * @property Grid\Column|Collection is_site
      * @property Grid\Column|Collection email
@@ -134,6 +134,8 @@ namespace Dcat\Admin {
      * @method Grid\Column|Collection publisher(string $label = null)
      * @method Grid\Column|Collection content(string $label = null)
      * @method Grid\Column|Collection is_check(string $label = null)
+     * @method Grid\Column|Collection company_id(string $label = null)
+     * @method Grid\Column|Collection status(string $label = null)
      * @method Grid\Column|Collection category(string $label = null)
      * @method Grid\Column|Collection platform_logo(string $label = null)
      * @method Grid\Column|Collection platform_name(string $label = null)
@@ -179,9 +181,7 @@ namespace Dcat\Admin {
      * @method Grid\Column|Collection exception(string $label = null)
      * @method Grid\Column|Collection failed_at(string $label = null)
      * @method Grid\Column|Collection Introduction(string $label = null)
-     * @method Grid\Column|Collection status(string $label = null)
      * @method Grid\Column|Collection check_time(string $label = null)
-     * @method Grid\Column|Collection company_id(string $label = null)
      * @method Grid\Column|Collection is_business(string $label = null)
      * @method Grid\Column|Collection is_site(string $label = null)
      * @method Grid\Column|Collection email(string $label = null)
@@ -230,6 +230,8 @@ namespace Dcat\Admin {
      * @property Show\Field|Collection publisher
      * @property Show\Field|Collection content
      * @property Show\Field|Collection is_check
+     * @property Show\Field|Collection company_id
+     * @property Show\Field|Collection status
      * @property Show\Field|Collection category
      * @property Show\Field|Collection platform_logo
      * @property Show\Field|Collection platform_name
@@ -275,9 +277,7 @@ namespace Dcat\Admin {
      * @property Show\Field|Collection exception
      * @property Show\Field|Collection failed_at
      * @property Show\Field|Collection Introduction
-     * @property Show\Field|Collection status
      * @property Show\Field|Collection check_time
-     * @property Show\Field|Collection company_id
      * @property Show\Field|Collection is_business
      * @property Show\Field|Collection is_site
      * @property Show\Field|Collection email
@@ -321,6 +321,8 @@ namespace Dcat\Admin {
      * @method Show\Field|Collection publisher(string $label = null)
      * @method Show\Field|Collection content(string $label = null)
      * @method Show\Field|Collection is_check(string $label = null)
+     * @method Show\Field|Collection company_id(string $label = null)
+     * @method Show\Field|Collection status(string $label = null)
      * @method Show\Field|Collection category(string $label = null)
      * @method Show\Field|Collection platform_logo(string $label = null)
      * @method Show\Field|Collection platform_name(string $label = null)
@@ -366,9 +368,7 @@ namespace Dcat\Admin {
      * @method Show\Field|Collection exception(string $label = null)
      * @method Show\Field|Collection failed_at(string $label = null)
      * @method Show\Field|Collection Introduction(string $label = null)
-     * @method Show\Field|Collection status(string $label = null)
      * @method Show\Field|Collection check_time(string $label = null)
-     * @method Show\Field|Collection company_id(string $label = null)
      * @method Show\Field|Collection is_business(string $label = null)
      * @method Show\Field|Collection is_site(string $label = null)
      * @method Show\Field|Collection email(string $label = null)

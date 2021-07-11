@@ -62,7 +62,7 @@
                             </p>
                         </div>
                         <div class="pos">
-                            <span>8</span>
+                            <span>{{ rand(3,999)}}</span>
                         </div>
                     </div>
                     @endforeach
@@ -73,7 +73,7 @@
                 <ul>
                     @foreach($companties->where('is_real',true) as $company)
                     <li>
-                        <a href="{{ route('company.show',['company'=>$company])}}" target="_black" rel="nofollow">
+                        <a href="{{ $company->platform_url }}" target="_black" rel="nofollow">
                             <img src="/storage/{{ $company->platform_logo }}" alt="{{ $company->platform_name }}">
                             <span class="company_namer">{{ $company->platform_name }}</span>
                         </a>

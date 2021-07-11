@@ -26,13 +26,13 @@
                     </div>
                     <div class="ft">
                         <ul>
-                            <li>上一篇：<a href="/article/hyqh/650.html">期货交易适合做中长线投资？</a></li>
-                            <li>下一篇：<a href="/article/hygjs/652.html">如何借助均线读懂贵金属走势图？</a></li>
+                            <li>上一篇：<a href="#">期货交易适合做中长线投资？</a></li>
+                            <li>下一篇：<a href="#">如何借助均线读懂贵金属走势图？</a></li>
                         </ul>
                     </div>
                     <div class="smm">
                         <p>
-                            配配查作为开放的资讯分享平台，所提供的所有资讯仅代表作者个人观点，与配配查平台立场无关，且不构成任何投资理财建议。如若转载请标注文章来源：配配查。</p>
+                            配天眼作为开放的资讯分享平台，所提供的所有资讯仅代表作者个人观点，与配天眼平台立场无关，且不构成任何投资理财建议。如若转载请标注文章来源：配天眼。</p>
                     </div>
                 </div>
                 <div class="company-box">
@@ -125,12 +125,12 @@
                 <div class="c-y-1">
                     <div class="pic">
                         <a href="/userdetail/500" target="_blank">
-                            <img src="/public/img/platformhead/202105/16220940992347.jpg">
+                            <img src="/web/image/avator.jpeg">
                             <em></em>
                         </a>
                     </div>
                     <div class="userdetailname">
-                        <h2><a href="/userdetail/500">股海牛舰</a></h2>
+                        <h2><a href="/userdetail/500">{{ Auth::user()}}</a></h2>
                     </div>
                     <ul class="userdetailnum">
                         <li>

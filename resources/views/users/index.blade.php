@@ -13,20 +13,20 @@
                     <div class="header-img">
                         <a href="/web/index/nickname"><img src="/web/image/noheadimg.png"></a>
                     </div>
-                    <h2><a href="/web/index/nickname">配配查655717</a><img src="/web/image/user_left4.png"></h2>
+                    <h2><a href="{{ route('user.index')}}">{{ Auth::user()->name }}</a><img src="/web/image/user_left4.png"></h2>
                     <div class="type">
                         &nbsp;&nbsp;<img src="/web/image/content7.png">
                         未入驻企业
                     </div>
                     <div class="apply">
-                        <a href="/web/index/platformapplyshow">修改展业权限</a>
+                        <a href="#">修改展业权限</a>
                     </div>
                 </div>
-                <div class="header-title">
+          {{--       <div class="header-title">
                     <img src="/web/image/user_left1.png">
                     <span>管理</span>
-                </div>
-                <div class="guanLi-box content-btn">
+                </div> --}}
+           {{--      <div class="guanLi-box content-btn">
                     <ul style="position: relative;">
                         <a href="/web/index/risk_warming">
                             <li>风险提示</li>
@@ -44,20 +44,20 @@
                             <li>我的关注</li>
                         </a>
                     </ul>
-                </div>
+                </div> --}}
                 <div class="header-title">
                     <img src="/web/image/user_left2.png">
                     <span>设置</span>
                 </div>
                 <div class="guanLi-box set-btn">
                     <ul>
-                        <a href="/web/index/mycard">
+                        <a href="#">
                             <li>名片信息</li>
                         </a>
-                        <a href="/web/index/nickname">
+                        <a href="#">
                             <li>昵称头像</li>
                         </a>
-                        <a href="/web/index/mypassword">
+                        <a href="#">
                             <li>密码修改</li>
                         </a>
                     </ul>
@@ -100,12 +100,12 @@
                     <article class="new-total">
                         <p class="total-name">常见入口</p>
                         <div class="total-box">
-                            <a href="/publish" target="_black">
+                          {{--   <a href="/publish" target="_black">
                                 <li>
                                     <img src="/web/image/user_right_ico1.png">
                                     <span>发布新闻</span>
                                 </li>
-                            </a>
+                            </a> --}}
                             <a href="javascript:void(0);" onclick="return commentplatform();">
                                 <li>
                                     <img src="/web/image/user_right_ico4.png">
@@ -131,8 +131,57 @@
         </div>
     </div>
 </div>
+@endsection
+@section('styles')
+<style type="text/css">
+    .searchul {
+        width: 100%;
+        position: absolute;
+        top: 44px;
+        left: 0;
+        background: #fff;
+        z-index: 1000 !important;
+        max-height: 196px;
+        overflow-y: scroll;
+        box-shadow: 0 0 5px #ccc;
+        height: 0;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .searchul li {
+        color: #333;
+        padding-left: 15px;
+        line-height: 28px;
+        cursor: pointer;
+
+    }
+
+    .searchul li:hover {
+        background: #f2f2f2;
+    }
+
+    .fixed-i .fixed-header .input .shu {
+        margin-top: 5px;
+        width: 309px;
+        height: 35px;
+    }
+
+    .fixed-i .fixed-header .input a {
+        height: 37px;
+    }
+
+    .fixed-i .fixed-header .input {
+        width: 390px;
+    }
+
+</style>
+<link href="{{ asset('web/css/user.css') }}" rel="stylesheet">
+<link href="{{ asset('web/css/company_detail.css') }}" rel="stylesheet">
+@endsection
+@section('scripts')
+{{-- <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/layer/3.1.1/layer.js"></script> --}}
 <script>
-function complaintthis() {
+    function complaintthis() {
     layer.open({
         type: 1,
         title: '投诉',
@@ -141,7 +190,7 @@ function complaintthis() {
         content: ` <div class="complaint-content complaint-content1">
                 <div class="input-wrap is-check mb20">
                     <label>投诉对象</label>
-                    <input class="pr34" id="agent" name="platform" placeholder="请输入投诉平台名称" type="text" onkeyup="return getthisli(this);" >
+                    <input class="pr34" id="agent" name="platform" placeholder="请输入投诉平台名称" type="text" ponkeyup="return getthisli(this);" >
                     <ul class="searchul2" style="height: auto;display:none;">
 
                     </ul>
@@ -287,7 +336,7 @@ function commentplatform() {
         content: ` <div class="complaint-content complaint-content1">
                 <div class="input-wrap is-check mb20">
                     <label>评论对象</label>
-                    <input class="pr34" id="agent2" name="platform" placeholder="请输入投诉平台名称" type="text" onkeyup="return getthisli2(this);" >
+                    <input class="pr34" id="agent2" name="platform" placeholder="请输入投诉平台名称" type="text"  onkeyup="return getthisli2(this);" >
                     <ul class="searchul2" style="height: auto;display:none;">
 
                     </ul>
@@ -295,19 +344,6 @@ function commentplatform() {
                 <div class="input-wrap is-check">
                     <label>评论内容</label>
                     <textarea placeholder="请您依据实际情况详细描述投诉事由（不少于20字）。禁止发布违反法律、行政法规及不文明内容。捏造事实、诬陷诽谤他人、泄露他人隐私的投诉单有可能被驳回。" id="content4" name="content"></textarea>
-                </div>
-                <div class="input-wrap mb20" style="margin-top: 10px;">
-                    <label>图片</label>
-                    <div class="y-wx" style="margin-left:90px;">
-                        <div class="div">
-                            <!-- <img class="img" id="img" src="/web/image/viewpoint.png" alt="上传图片"> -->
-                            <input name="wx" id="file2" type="file" name="dile" multiple  size="40" value="" onchange="FileUpload_onselect2();">
-                        </div>
-                        <div class="txt" style="margin-top:20px;">可以上存截图等图片最多5张图片<br>格式为JPG、PNG、GIF</div>
-                    </div>
-                </div>
-                <div class="input-wrap mb20" style="display:none;margin-left:90px;" id="imgsshow2">
-
                 </div>
                 <div class="complaint-submit-btn" onclick="return submitcomment();" style="margin-top:30px;">提交</div>
             </div>`,
@@ -340,17 +376,13 @@ function submitcomment() {
     var formData = new FormData();
     var platform = $("#agent2").val();
     var content = $("#content4").val();
-    var file = new Array();
-    var filenum = $("#file2")[0].files.length;
-    if (filenum > 5) {
-        layer.msg("文件上传数量不能超过5个");
-    }
-    for (var i = 0; i < filenum; i++) {
-        formData.append("file[]", $("#file2")[0].files[i]);
-    }
-    formData.append("platform", platform);
+    var platform_id = $("#agent2").attr('platid');
     formData.append("content", content);
+    formData.append("company_id", platform_id);
     $.ajax({
+         headers: {
+              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
         cache: false,
         type: "POST",
         dataType: "json",
@@ -358,7 +390,7 @@ function submitcomment() {
         async: false,
         contentType: false,
         processData: false,
-        url: '/platformcomment',
+        url: '{{ route('comment.store')}}',
         success: function(J) {
             if (J.code == 2) {
                 layer.msg(J.msg);
@@ -379,9 +411,12 @@ function getthisli2(dom) {
         "keyword": keyword,
     }
     $.ajax({
+        headers: {
+              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
         data: _data,
         dataType: "json",
-        url: '/getplatformlist',
+        url: '{{ route('company.search')}}',
         type: "POST",
         success: function(J) {
             if (J.code == 2) {
@@ -389,7 +424,7 @@ function getthisli2(dom) {
             } else if (J.code == 1) {
                 var str = '';
                 for (var i = 0; i < J.data.length; i++) {
-                    str += '<li class="showli" onclick="return clickthis2(this);">' + J.data[i].company_all_name + '</li>';
+                    str += '<li class="showli" platid='+ J.data[i].id +' onclick="return clickthis2(this);">' + J.data[i].platform_name + '</li>';
                 }
                 $(dom).next().append(str);
                 $(".searchul2").css('display', "");
@@ -399,8 +434,10 @@ function getthisli2(dom) {
 }
 
 function clickthis2(dom) {
-    var thisval = $(dom).html();
-    $("#agent2").val(thisval);
+    $("#agent2").val($(dom).html());
+    $("#agent2").attr('platid',$(dom).attr('platid'));
+
+    $('#agent2').attr('platid',);
     $(".searchul2").css('display', "none");
 }
 
@@ -534,54 +571,4 @@ function loadmore(dom) {
 }
 
 </script>
-
-@endsection
-@section('styles')
-<style type="text/css">
-    .searchul {
-        width: 100%;
-        position: absolute;
-        top: 44px;
-        left: 0;
-        background: #fff;
-        z-index: 1000 !important;
-        max-height: 196px;
-        overflow-y: scroll;
-        box-shadow: 0 0 5px #ccc;
-        height: 0;
-        border-radius: 0 0 5px 5px;
-    }
-
-    .searchul li {
-        color: #333;
-        padding-left: 15px;
-        line-height: 28px;
-        cursor: pointer;
-
-    }
-
-    .searchul li:hover {
-        background: #f2f2f2;
-    }
-
-    .fixed-i .fixed-header .input .shu {
-        margin-top: 5px;
-        width: 309px;
-        height: 35px;
-    }
-
-    .fixed-i .fixed-header .input a {
-        height: 37px;
-    }
-
-    .fixed-i .fixed-header .input {
-        width: 390px;
-    }
-
-</style>
-<link href="{{ asset('web/css/user.css') }}" rel="stylesheet">
-<link href="{{ asset('web/css/company_detail.css') }}" rel="stylesheet">
-@endsection
-@section('scripts')
-{{-- <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/layer/3.1.1/layer.js"></script> --}}
 @endsection

@@ -17,6 +17,7 @@ class NewsController extends Controller
 
     public function show(Article $new)
     {
+        $new->addViewCount();
         return view('actiles.show',compact('new'));
     }
 }

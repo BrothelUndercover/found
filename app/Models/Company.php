@@ -32,4 +32,9 @@ class Company extends Model
     {
         return $query->orderByDesc('sort');
     }
+
+    public function comments()
+    {
+        return $this->hasMany('App\Models\Company','company_id');
+    }
 }

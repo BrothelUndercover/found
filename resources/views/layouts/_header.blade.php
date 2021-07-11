@@ -23,7 +23,7 @@
                     <a href="javascript:void(0);" onclick="return layer.msg('请先登录');">入驻</a>
                 </div>
                 <div class="r2 fr">
-                    {{-- <a href="/commentlist">热评<span>HOT</span></a> --}}
+                    <a href="{{ route('company.comment') }}">热评<span>HOT</span></a>
                     <a href="{{ route('company.monitor') }}">监控</a>
                     <a href="{{ route('company.newest') }}">最新</a>
                      {{-- <a href="/complaintlist">曝光</a> --}}

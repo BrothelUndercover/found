@@ -18,4 +18,9 @@ class Article extends Model
     {
         return $this->belongsTo('App\Models\Group','group');
     }
+
+    public function addViewCount()
+    {
+        return $this->where('id',$this->id)->increment('view',1);
+    }
 }
